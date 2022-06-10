@@ -341,9 +341,6 @@ public static class CreateDungeon
             Door tempdoor = tempobj.GetComponent<Door>();   //문 스크립트
             tempdoor.transform.position = new Vector3(doorPosArr[(int)_dir].x, doorPosArr[(int)_dir].y);        //위치
             
-            //tempdoor.Dir = _dir;        //방향
-            //tempdoor.NextRoom = nextRoom.roomObj;   //다음 방
-
             room.isDoor[(int)_dir] = true;  //방 정보의 해당 방향 문 true
             room.DoorObj[(int)_dir] = tempdoor; //방 정보의 해당 방향 문 오브젝트 세팅
         }
